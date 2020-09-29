@@ -2,12 +2,12 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 
 
 # header-rewrite
-# ç™¾åº¦è´´å§
+# °Ù¶ÈÌù°É
 ^https?+:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
 ^https?+:\/\/jump2\.bdimg\.com\/(?>f|p) url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
-# ç™¾åº¦çŸ¥é“
+# °Ù¶ÈÖªµÀ
 ^https?+:\/\/zhidao\.baidu\.com url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
-# çŸ¥ä¹
+# Öªºõ
 ^https?+:\/\/www\.zhihu\.com\/question url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
 
 
@@ -17,7 +17,7 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 
 
 # script
-# é˜¿é‡Œ
+# °¢Àï
 ^https?+:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
 ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
 
@@ -25,87 +25,87 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 # Tide.list
 # Strong Stain Removal
 # 0~9
-# > 21ç»æµ
+# > 21¾­¼Ã
 ^https?+:\/\/api\.21jingji\.com\/ad\/ url reject-200
 # > 360doc
 ^https?+:\/\/mobi\.360doc\.com\/v\d{2}\/Ajax\/festival\.ashx\?op=getfestivaltheme url reject-200
-# > 55æµ·æ·˜
+# > 55º£ÌÔ
 ^https?+:\/\/appv6\.55haitao\.com\/IflyAd\/getAd url reject-200
-# > 58åŒåŸ
+# > 58Í¬³Ç
 ^https?+:\/\/app\.58\.com\/api\/home\/a(?>dvertising|ppadv)\/ url reject-200
 ^https?+:\/\/app\.58\.com\/api\/home\/invite\/popupAdv url reject-200
 ^https?+:\/\/app\.58\.com\/api\/log\/ url reject-200
 ^https?+:\/\/.+?\.58cdn\.com\.cn\/brandads\/ url reject-200
 
 # A
-# > é˜¿é‡Œ
+# > °¢Àï
 ^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless url reject-200
 # >> 1688
 ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv url reject-200
-# >> é£çŒª
+# >> ·ÉÖí
 ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ url reject-200
-# >> æ·˜å®
+# >> ÌÔ±¦
 ^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}+$ url reject-200
 ^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$ url reject-200
 ^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$ url reject-200
-# >> æ·˜ç¥¨ç¥¨
+# >> ÌÔÆ±Æ±
 ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ url reject-200
-# >> å£ç¢‘
+# >> ¿Ú±®
 ^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json url reject-200
 ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ url reject-200
-# >> é«˜å¾·åœ°å›¾
+# >> ¸ßµÂµØÍ¼
 ^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ url reject-200
-# >> å¤©çŒ«
+# >> ÌìÃ¨
 ^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4} url reject-200
-# >> ä¼˜é…·
+# >> ÓÅ¿á
 ^https?+:\/\/.+?\.mp4\?ccode=0902 url reject-200
 ^https?+:\/\/.+?\.mp4\?sid= url reject-200
 ^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid= url reject-200
 # > AcFun
 ^https?+:\/\/aes\.acfun\.cn\/s\?adzones url reject-200
-# > çˆ±å›æ”¶
+# > °®»ØÊÕ
 ^https?+:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement url reject-200
-# > çˆ±æ€åŠ©æ‰‹
+# > °®Ë¼ÖúÊÖ
 ^https?+:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml url reject-200
 # > APICloud
 ^https?+:\/\/a\.apicloud\.com\/start_page\/ url reject-200
 
 # B
-# > ç™¾åº¦
-# >> ç™¾åº¦ç½‘ç›˜
+# > °Ù¶È
+# >> °Ù¶ÈÍøÅÌ
 ^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx url reject-200
 ^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject-200
 ^https?+:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ url reject-200
-# >> ç™¾åº¦è´´å§
+# >> °Ù¶ÈÌù°É
 ^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule url reject-200
 ^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo url reject-200
 ^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog) url reject-200
-# >> ç™¾åº¦åœ°å›¾
+# >> °Ù¶ÈµØÍ¼
 ^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg url reject-200
-# >> çˆ±å¥‡è‰º
+# >> °®ÆæÒÕ
 ^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
 ^https?+:\/\/.+?\/(?>mixer|track2)\? url reject-200
 ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do url reject-200
 ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject-200
-# > å“”å“©å“”å“©
+# > ßÙÁ¨ßÙÁ¨
 ^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
 ^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200
-# > æŠ±æŠ±
+# > ±§±§
 ^https?+:\/\/www\.myhug\.cn\/ad\/ url reject-200
-# > ç™¾è¯æ–©
+# > °Ù´ÊÕ¶
 ^https?+:\/\/7n\.bczcdn\.com\/launchad\/ url reject-200
-# > è´å¤ªå¨æˆ¿
+# > ±´Ì«³ø·¿
 ^https?+:\/\/channel\.beitaichufang\.com\/channel\/api\/v\d\/promote\/ios\/start\/page url reject-200
-# > å¸ä¸–ç•Œ
+# > ±ÒÊÀ½ç
 ^https?+:\/\/iapi\.bishijie\.com\/actopen\/advertising\/ url reject-200
-# > è´å£³æ‰¾æˆ¿
+# > ±´¿ÇÕÒ·¿
 ^https?+:\/\/app\.api\.ke\.com\/config\/config\/bootpage url reject-200
-# > è–„è·
+# > ±¡ºÉ
 ^https?+:\/\/status\.boohee\.com\/api\/v\d\/app_square\/start_up_with_ad url reject-200
 
 # C
 # > CNKI
-# >> æ‰‹æœºçŸ¥ç½‘
+# >> ÊÖ»úÖªÍø
 ^https?+:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$ url reject-200
 # > CNTV
 ^https?+:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+?\?maxbr=850 url reject-200
@@ -114,49 +114,49 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/v\.cctv\.com\/.+?850 url reject-200
 # > CSDN
 ^https?+:\/\/gw\.csdn\.net\/cms-app\/v2\/home_page\/open_advertisement url reject-200
-# > è½¦æ¥äº†
+# > ³µÀ´ÁË
 ^https?+:\/\/api\.chelaile\.net\.cn\/adpub\/ url reject-200
 ^https?+:\/\/api\.chelaile\.net\.cn\/goocity\/advert\/ url reject-200
 ^https?+:\/\/pic\d\.chelaile\.net\.cn\/adv\/ url reject-200
-# > æ›¹æ“å‡ºè¡Œ
+# > ²Ü²Ù³öĞĞ
 ^https?+:\/\/cap\.caocaokeji\.cn\/advert-bss\/ url reject-200
-# > è´¢ç»
+# > ²Æ¾­
 ^https?+:\/\/api\.caijingmobile\.com\/ad(?:vert)?+\/ url reject-200
-# > è¶…çº§è¯¾ç¨‹è¡¨
+# > ³¬¼¶¿Î³Ì±í
 ^https?+:\/\/.+?\/V\d\/splash\/getSplashV\d\.action url reject-200
-# > è¶…çº§æ˜Ÿé¥­å›¢
+# > ³¬¼¶ĞÇ·¹ÍÅ
 ^https?+:\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/ url reject-200
-# > è¶…æ˜Ÿå­¦ä¹ é€š
+# > ³¬ĞÇÑ§Ï°Í¨
 ^https?+:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig\? url reject-200
 
 # D
-# > è±†ç“£
+# > ¶¹°ê
 ^https?+:\/\/api\.douban\.com\/v\d\/app_ads\/ url reject-200
-# > æ–—é±¼
+# > ¶·Óã
 ^https?+:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo url reject-200
-# > å½“å½“
+# > µ±µ±
 ^https?+:\/\/mapi\.dangdang\.com\/index\.php\?action=init url reject-200
 ^https?+:\/\/e\.dangdang\.com\/.+?getDeviceStartPage url reject-200
-# > è›‹è›‹èµ
+# > µ°µ°ÔŞ
 ^https?+:\/\/www\.dandanzan\.com\/res\/gdsefse\.js url reject-200
-# > å¨é±¼
+# > ß¶Óã
 ^https?+:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd url reject-200
-# > ä¸é¦™åŒ»ç”Ÿ
+# > ¶¡ÏãÒ½Éú
 ^https?+:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch url reject-200
-# > å˜€å—’å‡ºè¡Œ
+# > àÖàª³öĞĞ
 ^https?+:\/\/res\.xiaojukeji\.com\/resapi\/activity\/getPreloaded url reject-200
 ^https?+:\/\/res\.xiaojukeji\.com\/resapi\/activity\/getPasMultiNotices url reject-200
 ^https?+:\/\/capis(?:-slb)?+\.didapinche\.com\/ad\/ url reject-200
 ^https?+:\/\/www\.didapinche\.com\/app\/adstat\/ url reject-200
-# > ç”µè§†å®¶
+# > µçÊÓ¼Ò
 ^https?+:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject-200
-# ï¼ æ¯’
+# £¾ ¶¾
 ^https?+:\/\/app\.poizon\.com\/api\/v1\/app\/advertisement\/adv\/ url reject-200
 
 # E
-# > è‰ºé¾™
+# > ÒÕÁú
 ^https?+:\/\/mobile-api2011\.elong\.com\/ad(?>v|gateway) url reject-200
-# > eä»£é©¾
+# > e´ú¼İ
 ^https?+:\/\/pic\.edaijia\.cn\/adsplash\/ url reject-200
 
 # F
@@ -164,12 +164,12 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(?>banner|notice)\/overview url reject-200
 # > FOTOABLE
 ^https?+:\/\/cdn\.api\.fotoable\.com\/Advertise\/ url reject-200
-# > é£å®¢èŒ¶é¦†
+# > ·É¿Í²è¹İ
 ^https?+:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis url reject-200
-# > é£å¸¸å‡†
+# > ·É³£×¼
 ^https?+:\/\/app\.variflight\.com\/ad\/ url reject-200
 ^https?+:\/\/app\.variflight\.com\/v\d\/advert\/ url reject-200
-# > å‡¤å‡°ç§€
+# > ·ï»ËĞã
 ^https?+:\/\/dsa-mfp\.fengshows\.cn\/mfp\/mfpMultipleDelivery\.do\?.+?adunitid url reject-200
 
 # G
@@ -181,56 +181,56 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ;^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ url reject-200
 # > Gofun
 ^https?+:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json url reject-200
-# > å›½æ³°å›å®‰
+# > ¹úÌ©¾ı°²
 ^https?+:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+?\.jpg$ url reject-200
 
 # H
-# > æ­å·å…¬äº¤
+# > º¼Öİ¹«½»
 ^https?+:\/\/m\.ibuscloud\.com\/v2\/app\/getStartPage url reject-200
-# > æ­å·å¸‚Â·å¸‚æ°‘å¡
+# > º¼ÖİÊĞ¡¤ÊĞÃñ¿¨
 ^https?+:\/\/smkmp\.96225\.com\/smkcenter\/ad\/ url reject-200
-# > è™æ‰‘
+# > »¢ÆË
 ^https?+:\/\/games\.mobileapi\.hupu\.com\/\d\/(?:\d\.){2}\d\/status\/init url reject-200
-# > è™ç‰™
+# > »¢ÑÀ
 ^https?+:\/\/business\.msstatic\.com\/advertiser\/ url reject-200
 ^https?+:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource url reject-200
-# > åä½ä¼š
+# > »ª×¡»á
 ^https?+:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/ url reject-200
-# > éŸ©å‰§ç¤¾
+# > º«¾çÉç
 ^https?+:\/\/47\.97\.20\.12\/ad\/ url reject-200
-# > ç«çŒ«
+# > »ğÃ¨
 ^https?+:\/\/api\.huomao\.com\/channels\/loginAd url reject-200
 # > HiveBox
 ^https?+:\/\/consumer\.fcbox\.com\/v\d\/ad\/ url reject-200
-# > å¥½å¥½ä½
+# > ºÃºÃ×¡
 ^https?+:\/\/api\.haohaozhu\.cn\/index\.php\/home\/AppInit\/getStartPhoto url reject-200
-# > èŠ±ç”Ÿåœ°é“
+# > »¨ÉúµØÌú
 ^https?+:\/\/cmsapi\.wifi8\.com\/v\d\/(?>emptyAd|adNew)\/ url reject-200
 
 # I
-# > è®¯é£
+# > Ñ¶·É
 ^https?+:\/\/imeclient\.openspeech\.cn\/adservice\/ url reject-200
-# > å¥½ä½“çŸ¥
+# > ºÃÌåÖª
 ^https?+:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise url reject-200
 
 # J
-# > äº¬ä¸œ
+# > ¾©¶«
 ^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject-200
 ^https?+:\/\/b?dsp-x\.jd\.com\/adx\/ url reject-200
 ^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject-200
 ^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
-# > ç•Œé¢æ–°é—»
+# > ½çÃæĞÂÎÅ
 ^https?+:\/\/img\.jiemian\.com\/ads\/ url reject-200
-# > é©¾æ ¡ä¸€ç‚¹é€š
+# > ¼İĞ£Ò»µãÍ¨
 ^https?+:\/\/api\.jxedt\.com\/ad\/ url reject-200
 ^https?+:\/\/richmanapi\.jxedt\.com\/api\/ad\/ url reject-200
-# > é©¾è€ƒå®å…¸
+# > ¼İ¿¼±¦µä
 ^https?+:\/\/.+?\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ url reject-200
-# > é‡‘å±± WPS
+# > ½ğÉ½ WPS
 ^https?+:\/\/ios\.wps\.cn\/ad-statistics-service url reject-200
 ^https?+:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject-200
 ^https?+:\/\/\w+?\.kingsoft-office-service\.com\/ad url reject-200
-# > é‡‘å±±è¯éœ¸
+# > ½ğÉ½´Ê°Ô
 ^https?+:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+?(?>c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController) url reject-200
 ^https?+:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson url reject-200
 
@@ -238,60 +238,60 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 # > Keep
 ^https?+:\/\/api\.gotokeep\.com\/ads url reject-200
 ^https?+:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4} url reject-200
-# > å¿«é€’100
+# > ¿ìµİ100
 ^https?+:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do url reject-200
-# > å¿«çœ‹æ¼«ç”»
+# > ¿ì¿´Âş»­
 ^https?+:\/\/api\.kkmh\.com\/.+?ad(?:vertisement)?+\/ url reject-200
-# > é…·æˆ‘ (122.14.246.33,175.102.178.52)
+# > ¿áÎÒ (122.14.246.33,175.102.178.52)
 ^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/MobileAdServer\/ url reject-200
 ^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/EcomResourceServer\/AdPlayPage\/adinfo url reject-200
-# > çœ‹ç†æƒ³
+# > ¿´ÀíÏë
 ^https?+:\/\/api\.vistopia\.com\.cn\/api\/v\d\/home\/advertisement url reject-200
 
 # L
-# > ä¹è§†
+# > ÀÖÊÓ
 ^https?+:\/\/.+?\/letv-gug\/ url reject-200
-# > æ¥ç–¯ç›´æ’­
+# > À´·èÖ±²¥
 ^https?+:\/\/api\.laifeng\.com\/v\d\/start\/ads url reject-200
-# > æ‡’æŠ•èµ„
+# > ÀÁÍ¶×Ê
 ^https?+:\/\/ios\.lantouzi\.com\/api\/startpage url reject-200
-# > æ—…æ³•å¸ˆè¥åœ°
+# > ÂÃ·¨Ê¦ÓªµØ
 ^https?+:\/\/www\.iyingdi\.cn\/ad url reject-200
 
 # M
-# > å°ç±³
+# > Ğ¡Ã×
 ^https?+:\/\/api\.m\.mi\.com\/v\d\/app\/start url reject-200
 ^https?+:\/\/api\.jr\.mi\.com\/v\d\/adv\/ url reject-200
 ^https?+:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen url reject-200
 ^https?+:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\? url reject-200
-# > è˜‘è‡ç§Ÿæˆ¿
+# > Ä¢¹½×â·¿
 ^https?+:\/\/api\.mgzf\.com\/renter-operation\/home\/startHomePage url reject-200
-# > å¢¨è¿¹å¤©æ°”
+# > Ä«¼£ÌìÆø
 ^https?+:\/\/cdn\.moji\.com\/ad(?>oss|link)\/ url reject-200
-# > åŸ‹å †å †
+# > Âñ¶Ñ¶Ñ
 ^https?+:\/\/mob\.mddcloud\.com\.cn\/api\/ad(?:vert)?+\/ url reject-200
-# > æ¼«ç”»äºº
+# > Âş»­ÈË
 ^https?+:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds url reject-200
-# > ç¾å›¢
+# > ÃÀÍÅ
 ^https?+:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
 ^https?+:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg url reject-200
 ^https?+:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp url reject-200
 ^https?+:\/\/s3plus\.meituan\.net\/.+?\/linglong\/.+?\.(?>gif|jpg|mp4) url reject-200
-# > ç¾å‘³ä¸ç”¨ç­‰
+# > ÃÀÎ¶²»ÓÃµÈ
 ^https?+:\/\/capi\.mwee\.cn\/app-api\/V\d{2}\/app\/(?:getstart)?+ad url reject-200
-# > ç§’æ‹
+# > ÃëÅÄ
 ^https?+:\/\/b-api\.ins\.miaopai\.com\/\d\/ad/ url reject-200
-# > é©¬èœ‚çª
+# > Âí·äÎÑ
 ^https?+:\/\/mapi\.mafengwo\.cn\/ad\/ url reject-200
 ^https?+:\/\/mapi\.mafengwo\.cn\/travelguide\/ad\/ url reject-200
-# > ä¹°å•å§
+# > Âòµ¥°É
 ^https?+:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do$ url reject-200
 ^https?+:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/getPopAds\.do$ url reject-200
-# > ç¾ç¯‡
+# > ÃÀÆª
 ^https?+:\/\/api\.meipian\.me.+?advert url reject-200
 
 # N
-# > çˆ±å—å®
+# > °®ÄÏÄş
 ^https?+:\/\/nnapp\.cloudbae\.cn\/mc\/api\/advert url reject-200
 # > NationalGeographic
 ^https?+:\/\/dili\.bdatu\.com\/jiekou\/ad\/ url reject-200
@@ -308,84 +308,84 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/slapi\.oray\.net\/client\/ad url reject-200
 
 # P
-# > PUå£è¢‹æ ¡å›­
+# > PU¿Ú´üĞ£Ô°
 ^https?+:\/\/pocketuni\.net\/\?app=api&mod=Message&act=ad url reject-200
-# > ç¥¨æ ¹
+# > Æ±¸ù
 ^https?+:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen url reject-200
-# > æ‹¼å¤šå¤š
+# > Æ´¶à¶à
 ^https?+:\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash url reject-200
 
 # Q
 # > Qdaily
 ^https?+:\/\/app\d\.qdaily\.com\/app\d\/boot_advertisements\.json url reject-200
 ^https?+:\/\/notch\.qdaily\.com\/api\/v\d\/boot_ad url reject-200
-# > ç©·æ¸¸
+# > ÇîÓÎ
 ^https?+:\/\/open\.qyer\.com\/qyer\/startpage\/ url reject-200
 ^https?+:\/\/open\.qyer\.com\/qyer\/config\/get url reject-200
 ^https?+:\/\/media\.qyer\.com\/ad\/ url reject-200
-# > äº²å®å®
+# > Ç×±¦±¦
 ^https?+:\/\/api\.qbb6\.com\/ad\/ url reject-200
 
 # R
-# > äººäººè§†é¢‘
+# > ÈËÈËÊÓÆµ
 ^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig url reject-200
 ^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising url reject-200
 ^https?+:\/\/api\.rr\.tv\/ad\/ url reject-200
-# > æ—¥æ—¥ç…®
+# > ÈÕÈÕÖó
 ^https?+:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\/ url reject-200
 ^https?+:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\/ url reject-200
 
 # S
-# > æ‰«æå…¨èƒ½ç‹
+# > É¨ÃèÈ«ÄÜÍõ
 ^https?+:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/ url reject-200
-# > ä»€ä¹ˆå€¼å¾—ä¹°
+# > Ê²Ã´ÖµµÃÂò
 ^https?+:\/\/api\.smzdm\.com\/v\d\/util\/loading url reject-200
 ^https?+:\/\/app-api\.smzdm\.com\/util\/loading url reject-200
 ^https?+:\/\/s\d\.zdmimg\.com\/www\/api\/v\d\/api\/thirdAd\.php url reject-200
-# > ç¥èˆŸä¸“è½¦
+# > ÉñÖÛ×¨³µ
 ^https?+:\/\/img01\.10101111cdn\.com\/adpos\/ url reject-200
-# > çœç‚¹
+# > Ê¡µã
 ^https?+:\/\/api\.waitwaitpay\.com\/\/api\/splash url reject-200
-# > è¯†è´§
+# > Ê¶»õ
 ^https?+:\/\/www\.shihuo\.cn\/app\d\/saveAppInfo url reject-200
-# > é¦–æ±½çº¦è½¦
+# > Ê×ÆûÔ¼³µ
 ^https?+:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs url reject-200
 ^https?+:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs url reject-200
-# > é¡ºä¸°é€Ÿè¿
+# > Ë³·áËÙÔË
 ^https?+:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryAdImages url reject-200
-# > å››å­£ç·šä¸Šå½±è¦–4gTV
+# > ËÄ¼¾¾€ÉÏÓ°Ò•4gTV
 ^https?+:\/\/service\.4gtv\.tv\/4gtv\/Data\/(?>GetAD|ADLog) url reject-200
-# > è‚†å®¢è¶³çƒ
+# > ËÁ¿Í×ãÇò
 ^https?+:\/\/api\.qiuduoduo\.cn\/guideimage url reject-200
-# > æœç‹—
+# > ËÑ¹·
 ^https?+:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg url reject-200
-# > æœç‹
+# > ËÑºü
 ^https?+:\/\/api\.k\.sohu\.com\/api\/news\/adsense url reject-200
 ^https?+:\/\/pic\.k\.sohu\.com\/img8\/wb\/tj\/ url reject-200
 ^https?+:\/\/s1\.api\.tv\.itc\.cn\/v4\/mobile\/control\/switch\.json url reject-200
 ^https?+:\/\/api\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap url reject-200
-# > è‹å®
+# > ËÕÄş
 ^https?+:\/\/image\.suning\.cn\/uimg\/ma\/ad\/ url reject-200
 
 # T
-# > è…¾è®¯
-# >> å¯Œé€”ç‰›ç‰›
+# > ÌÚÑ¶
+# >> ¸»Í¾Å£Å£
 ^https?+:\/\/api\d\.futunn\.com\/ad\/ url reject-200
-# >> å…¨æ°‘Kæ­Œ
+# >> È«ÃñK¸è
 ^https?+:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/.+?\d{3,4}+x\d{4} url reject-200
-# >> è…¾è®¯æ¸¸æˆ
+# >> ÌÚÑ¶ÓÎÏ·
 ^https?+:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons url reject-200
 ^https?+:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info url reject-200
-# >> è…¾è®¯åœ°å›¾
+# >> ÌÚÑ¶µØÍ¼
 ^https?+:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ url reject-200
 ^https?+:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/ url reject-200
 ^https?+:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ url reject-200
-# >> è…¾è®¯è§†é¢‘
+# >> ÌÚÑ¶ÊÓÆµ
 ^https?+:\/\/vv\.video\.qq\.com\/getvmind\? url reject-200
 ^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\? url reject-200
-# >> è…¾è®¯æ–°é—»
+# >> ÌÚÑ¶ĞÂÎÅ
 ^https?+:\/\/r\.inews\.qq\.com\/(?>adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) url reject-200
-# >> è…¾è®¯ä½“è‚²
+# >> ÌÚÑ¶ÌåÓı
 ^https?+:\/\/news\.ssp\.qq\.com\/app url reject-200
 # >> JOOX
 ^https?+:\/\/203\.205\.255\.16\/retrieval\/getAd url reject-200
@@ -396,17 +396,17 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/tiasdk\.app\.wechat\.com\/retrieval\/getAdInfo$ url reject-200
 ^https?+:\/\/mm\.app\.joox\.com\/retrieval\/getAd url reject-200
 ^https?+:\/\/mm\.app\.joox\.com\/billsrv\/clientBatchAdReport$ url reject-200
-# >> å¾®ä¿¡
+# >> Î¢ĞÅ
 ^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) url reject-200
-# > æ¾æ¹ƒæ–°é—»
+# > ÅìÅÈĞÂÎÅ
 ^https?+:\/\/adpai\.thepaper\.cn\/.+?&ad= url reject-200
-# > å¤ªå¹³æ´‹
+# > Ì«Æ½Ñó
 ^https?+:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/ url reject-200
 ^https?+:\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p url reject-200
 ^https?+:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/ url reject-200
 ^https?+:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p url reject-200
 ^https?+:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp url reject-200
-# > é€”ç‰›
+# > Í¾Å£
 ^https?+:\/\/m\.tuniu\.com\/api\/operation\/splash\/ url reject-200
 
 # V
@@ -415,74 +415,74 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/static\.vuevideo\.net\/styleAssets\/advertisement\/ url reject-200
 
 # W
-# > ç½‘æ˜“
-# >> ç½‘æ˜“é‚®ç®±
+# > ÍøÒ×
+# >> ÍøÒ×ÓÊÏä
 ^https?+:\/\/appconf\.mail\.163\.com\/mmad\/ url reject-200
-# >> ç½‘æ˜“æ–°é—»
+# >> ÍøÒ×ĞÂÎÅ
 ^https?+:\/\/c\.m\.163\.com\/nc\/gl\/ url reject-200
-# >> ç½‘æ˜“æœ‰é’±
+# >> ÍøÒ×ÓĞÇ®
 ^https?+:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds url reject-200
-# >> ç½‘æ˜“äº‘éŸ³ä¹
+# >> ÍøÒ×ÔÆÒôÀÖ
 ^https?+:\/\/.+?\/eapi\/(?>ad|log)\/ url reject-200
-# >> ç½‘æ˜“è€ƒæ‹‰
+# >> ÍøÒ×¿¼À­
 ^https?+:\/\/kaola-haitao\.oss\.kaolacdn.com\/.+?_\d{3,4}+_\d{4}\.jpg\?x-oss-process=image\/resize,m_mfit,w_\d{3,4}+,h_\d{4}\/format,webp\/quality,Q_85 url reject-200
-# >> ç½‘æ˜“ä¸¥é€‰
+# >> ÍøÒ×ÑÏÑ¡
 ^https?+:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json url reject-200
-# >> ç½‘æ˜“èœ—ç‰›è¯»ä¹¦
+# >> ÍøÒ×ÎÏÅ£¶ÁÊé
 ^https?+:\/\/easyreadfs\.nosdn\.127\.net\/ad-material\/ url reject-200
 ^https?+:\/\/p\.du\.163\.com\/ad\/ url reject-200
-# >> æœ‰é“è¯å…¸
+# >> ÓĞµÀ´Êµä
 ^https?+:\/\/oimage[a-z][0-9]\.ydstatic\.com\/.+?adpublish url reject-200
 ^https?+:\/\/dsp-impr2\.youdao\.com\/adload url reject-200
-# > å¾®åŒ»
+# > Î¢Ò½
 ^https?+:\/\/app\.wy\.guahao\.com\/json\/white\/dayquestion\/getpopad url reject-200
 # > Weico
 ^https?+:\/\/overseas\.weico\.cc\/portal\.php\?a=get_coopen_ads url reject-200
-# > æ— ä»–ç›¸æœº
+# > ÎŞËûÏà»ú
 ^https?+:\/\/api-release\.wuta-cam\.com\/ad_tree url reject-200
 ^https?+:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json url reject-200
-# > èœ—ç‰›ç¡çœ 
+# > ÎÏÅ£Ë¯Ãß
 ^https?+:\/\/snailsleep\.net\/snail\/v\d\/screen\/qn\/get\? url reject-200
 ^https?+:\/\/snailsleep\.net\/snail\/v\d\/adTask\/ url reject-200
-# > WiFiå…±äº«å¤§å¸ˆ
+# > WiFi¹²Ïí´óÊ¦
 ^https?+:\/\/nochange\.ggsafe\.com\/ad\/ url reject-200
-# > å¾®åº—
+# > Î¢µê
 ^https?+:\/\/thor\.weidian\.com\/ares\/home\.splash\/ url reject-200
-# > åå°”è¡—è§é—»
+# > »ª¶û½Ö¼ûÎÅ
 ^https?+:\/\/api\.wallstreetcn\.com\/apiv\d\/advertising\/ url reject-200
 
 # X
-# > æ–°æµª
+# > ĞÂÀË
 ^https?+:\/\/edit\.sinaapp\.com\/ua\?t=adv url reject-200
-# >> æ–°æµªå¾®åš
+# >> ĞÂÀËÎ¢²©
 ^https?+:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(?>action|sdk)ad\.php url reject-200
 ^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-200
 ^https?+:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
-# >> æ–°æµªå¤©æ°”é€š
+# >> ĞÂÀËÌìÆøÍ¨
 ^https?+:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqt url reject-200
 ^https?+:\/\/tqt\.weibo\.cn\/.+?advert\.index url reject-200
 ^https?+:\/\/tqt\.weibo\.cn\/api\/advert\/ url reject-200
-# > ä¸‹å¨æˆ¿
+# > ÏÂ³ø·¿
 ^https?+:\/\/api\.xiachufang\.com\/v\d\/ad\/ url reject-200
-# > è™¾ç±³
+# > ÏºÃ×
 ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ url reject-200
-# > å°ç¡çœ 
+# > Ğ¡Ë¯Ãß
 ^https?+:\/\/api\.psy-1\.com\/cosleep\/startup url reject-200
-# > å°çŒ¿æœé¢˜
+# > Ğ¡Ô³ËÑÌâ
 ^https?+:\/\/xyst\.yuanfudao\.com\/iphone\/splashesV\d url reject-200
-# > æ–°ç‰‡åœº
+# > ĞÂÆ¬³¡
 ^https?+:\/\/app\.xinpianchang\.com\/open_screen\? url reject-200
-# > é›ªçƒ
+# > Ñ©Çò
 ^https?+:\/\/api\.xueqiu\.com\/ads\/display url reject-200
 ^https?+:\/\/(?>promo|api)\.xueqiu\.com\/promotion\/(?:feed_)?+display url reject-200
 ^https?+:\/\/(?>101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(?:feed_)?+display url reject-200
-# > è¿…æ¸¸åŠ é€Ÿå™¨
+# > Ñ¸ÓÎ¼ÓËÙÆ÷
 ^https?+:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/configs\/(?>splash_ad|ad_urls) url reject-200
 ^https?+:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/ads\/ url reject-200
-# > å–œé©¬æ‹‰é›…
+# > Ï²ÂíÀ­ÑÅ
 ^https?+:\/\/\w+?\.ximalaya\.com\/api\/v\d\/adRealTime url reject-200
 ^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/ting\/preload\/ url reject-200
-# > å°ç«™
+# > Ğ¡Õ¾
 ^https?+:\/\/tiku\.zhan\.com\/Common\/newAd\/ url reject-200
 
 # Y
@@ -490,81 +490,81 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/m\.yap\.yahoo\.com\/v\d{2}\/getAds\.do url reject-200
 # > Youtube++
 ;^https?+:\/\/api\.catch\.gift\/api\/v\d\/pagead\/ url reject-200
-# > è¤çŸ³äº‘è§†é¢‘
+# > Ó©Ê¯ÔÆÊÓÆµ
 ^https?+:\/\/i\.ys7\.com\/api\/ads url reject-200
-# > é˜…è¾¾æ•™è‚²
+# > ÔÄ´ï½ÌÓı
 ^https?+:\/\/www\.hxeduonline\.com\/mobileapi2\/index\.php\?act=index&op=interdict url reject-200
-# > è¿åŠ¨ä¸–ç•Œ
+# > ÔË¶¯ÊÀ½ç
 ^https?+:\/\/.+?\.iydsj\.com\/api\/.+?\/ad url reject-200
-# > ä¸€ç‚¹ä¸‡è±¡
+# > Ò»µãÍòÏó
 ^https?+:\/\/app\.mixcapp\.com\/mixc\/api\/v\d\/ad url reject-200
-# > å°è±¡ç¬”è®°
+# > Ó¡Ïó±Ê¼Ç
 ^https?+:\/\/app\.yinxiang\.com\/ads\/ url reject-200
-# > äº‘éº¦å¥½è½»
+# > ÔÆÂóºÃÇá
 ^https?+:\/\/restapi\.iyunmai\.com\/api\/ios\/ad\/ url reject-200
-# > è‚²å­¦å›­
+# > ÓıÑ§Ô°
 ^https?+:\/\/yxyapi\d\.drcuiyutao\.com\/yxy-api-gateway\/api\/json\/advert\/ url reject-200
-# > è¿…é›·
+# > Ñ¸À×
 ^https?+:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ url reject-200
-# > è®¯é£
+# > Ñ¶·É
 ^https?+:\/\/imeclient\.openspeech\.cn\/adservice\/ url reject-200
 
 # Z
-# > è½¬è½¬
+# > ×ª×ª
 ^https?+:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo$ url reject-200
-# > ç›´æ’­å§
+# > Ö±²¥°É
 ^https?+:\/\/a\.qiumibao\.com\/activities\/config\.php url reject-200
 ^https?+:\/\/.+?\/allOne\.php\?ad_name url reject-200
-# > çŸ¥ä¹
+# > Öªºõ
 ^https?+:\/\/api\.zhihu\.com\/(?>launch|real_time) url reject-200
 ^https?+:\/\/api\.zhihu\.com\/commercial_api\/(?>launch|real_time) url reject-200
 ^https?+:\/\/api\.zhihu\.com\/fringe\/ad url reject-200
 ^https?+:\/\/api\.zhihu\.com\/(?>ab|adx|xen|drama|zst|ad-style-service|market\/popover|search\/(?>top|tab|preset)|.*?(?>guide|recommendations|extended|featured-comment-ad)) url reject-200
 ^https?+:\/\/www\.zhihu\.com\/api\/v4\/cmmunity-ad url reject-200
-# > è¿½ä¹¦ç¥å™¨
+# > ×·ÊéÉñÆ÷
 ^https?+:\/\/(?>api|b)\.zhuishushenqi\.com\/advert url reject-200
 ^https?+:\/\/api\.zhuishushenqi\.com\/splashes\/ios url reject-200
 ^https?+:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage url reject-200
 ^https?+:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated url reject-200
 ^https?+:\/\/itunes\.apple\.com\/lookup\?id=575826903 url reject-200
-# > ä½œä¸šå¸®
+# > ×÷Òµ°ï
 ^https?+:\/\/www\.zybang\.com\/adx\/ url reject-200
-# > æœ€å³
+# > ×îÓÒ
 ^https?+:\/\/api\.izuiyou\.com\/ad\/ url reject-200
-# > å­—èŠ‚è·³åŠ¨
+# > ×Ö½ÚÌø¶¯
 ^https?+:\/\/.+?\.pstatp\.com\/img\/ad url reject-200
 ^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/ url reject-200
 ^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ url reject-200
 ^https?+:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject-200
 ^https?+:\/\/.+?\/img\/ad\.union\.api\/ url reject-200
-# > æ¶¨ä¹è´¢å¯Œé€š
+# > ÕÇÀÖ²Æ¸»Í¨
 ^https?+:\/\/d\.zhangle\.com\/pic\/cft\/interaction\/\d{13}-1242-2248\.jpg url reject-200
-# > ä¸­å›½å¤§å­¦æ…•è¯¾
+# > ÖĞ¹ú´óÑ§Ä½¿Î
 ^https?+:\/\/www\.icourse163\.org\/mob\/j\/v1\/mobRecommendRPCBean\.getMaxWeightAdvertisement\.rpc url reject-200
-# > ä¸­å›½é“¶è¡Œ
+# > ÖĞ¹úÒøĞĞ
 ^https?+:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? url reject-200
-# > ä¸­å›½å·¥å•†é“¶è¡Œ
+# > ÖĞ¹ú¹¤ÉÌÒøĞĞ
 ^https?+:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ url reject-200
-# > ä¸­å›½æ‹›å•†é“¶è¡Œ
+# > ÖĞ¹úÕĞÉÌÒøĞĞ
 ^https?+:\/\/pic1cdn\.cmbchina\.com\/appinitads\/ url reject-200
-# > ä¸­å›½æ°‘ç”Ÿé“¶è¡Œ
+# > ÖĞ¹úÃñÉúÒøĞĞ
 ^https?+:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ url reject-200
-# > ä¸­å›½å¹¿å‘é“¶è¡Œ
+# > ÖĞ¹ú¹ã·¢ÒøĞĞ
 ^https?+:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/.{25}\.jpg url reject-200
-# > ä¸­å›½ç§»åŠ¨
-# >> æ‰‹æœºè¥ä¸šå…
+# > ÖĞ¹úÒÆ¶¯
+# >> ÊÖ»úÓªÒµÌü
 ^https?+:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit url reject-200
-# >> æ±Ÿè‹
+# >> ½­ËÕ
 ^https?+:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query url reject-200
-# >> å’ªå’•
+# >> ßä¹¾
 ^https?+:\/\/gg\w+?\.cmvideo\.cn\/v\d\/iflyad\/ url reject-200
 ^https?+:\/\/ggic\d?\.cmvideo\.cn\/ad\/ url reject-200
 ^https?+:\/\/ggx\.cmvideo\.cn\/request\/ url reject-200
 ^https?+:\/\/.+?\/cdn-adn\/ url reject-200
-# > ä¸­å›½è”é€š
+# > ÖĞ¹úÁªÍ¨
 ^https?+:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm url reject-200
 ^https?+:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd url reject-200
-# > æŒé˜…
+# > ÕÆÔÄ
 ^https?+:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad\/ url reject-200
 ^https?+:\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad url reject-200
 ^https?+:\/\/ih2\.ireader\.com\/zycl\/api\/ad\/ url reject-200

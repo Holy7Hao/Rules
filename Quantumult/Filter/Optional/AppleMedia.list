@@ -1,0 +1,12 @@
+# Apple Music
+- HOST-SUFFIX,aod.itunes.apple.com,AppleMedia
+- HOST-SUFFIX,api.smoot.apple.cn,AppleMedia
+- HOST-SUFFIX,music.apple.com,AppleMedia
+- HOST-SUFFIX,mvod.itunes.apple.com,AppleMedia
+- HOST-SUFFIX,client-api.itunes.apple.com,AppleMedia
+- HOST-SUFFIX,itunes.apple.com,AppleMedia
+
+# Apple TV
+HOST,np-edge.itunes.apple.com,AppleMedia
+HOST,play-edge.itunes.apple.com,AppleMedia
+HOST-SUFFIX,tv.apple.com,AppleMedia

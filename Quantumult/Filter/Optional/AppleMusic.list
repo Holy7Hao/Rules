@@ -4,3 +4,13 @@ HOST-SUFFIX,api.smoot.apple.cn,AppleMusic
 HOST-SUFFIX,music.apple.com,AppleMusic
 HOST-SUFFIX,mvod.itunes.apple.com,AppleMusic
 HOST-SUFFIX,client-api.itunes.apple.com,AppleMusic
+# MV 播放
+#HOST-SUFFIX,mvod.itunes.apple.com,AppleMusic
+# Beats1 直播
+HOST-SUFFIX,itsliveradio.apple.com,AppleMusic
+# Beats1 视频
+HOST-SUFFIX,aodp-ssl.apple.com,AppleMusic
+# iTunes Store 音乐试听
+HOST-SUFFIX,audio-ssl.itunes.apple.com,AppleMusic
+# iTunes Store 购买后播放
+HOST-SUFFIX,streamingaudio.itunes.apple.com,AppleMusic

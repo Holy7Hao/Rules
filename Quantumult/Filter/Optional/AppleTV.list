@@ -3,3 +3,8 @@ HOST,np-edge.itunes.apple.com,AppleTV
 HOST,play-edge.itunes.apple.com,AppleTV
 HOST-SUFFIX,tv.apple.com,AppleTV
 HOST-SUFFIX,itunes.apple.com,AppleTV
+# 电视电影预告片
+HOST-SUFFIX,video-ssl.itunes.apple.com,AppleTV
+# 电视电影正片
+HOST-SUFFIX,mvod.itunes.apple.com,AppleTV
+HOST-SUFFIX,hls-amt.itunes.apple.com,AppleTV

@@ -18,12 +18,12 @@ https://api.zhihu.com/v4/questions url script-response-body https://raw.githubus
 https?://link.zhihu.com/?target= url script-request-header https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20link.js
 
 # 哔哩哔哩动画去广告 (By onewayticket255)
-https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)) url reject-200
-https://api.bilibili.com/x/v2/dm/ad url reject-200
-https://app.bilibili.com/x/v2/space\?access_key url script-response-body https://raw.githubusercontent.com/Holy7Hao/Rules/master/JS/Script/bilibili_space_qx.js
+#https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)) url reject-200
+#https://api.bilibili.com/x/v2/dm/ad url reject-200
+#https://app.bilibili.com/x/v2/space\?access_key url script-response-body https://raw.githubusercontent.com/Holy7Hao/Rules/master/JS/Script/bilibili_space_qx.js
 
 # 哔哩哔哩番剧开启1080P+
-^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/Holy7Hao/Rules/master/JS/Script/bilifj.js
+#^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/Holy7Hao/Rules/master/JS/Script/bilifj.js
 
 # 抖音去广告去水印 (By Choler)
 #URL Rewrite

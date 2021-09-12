@@ -78,7 +78,7 @@ https:\/\/.*\..*\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url script-respo
 ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
 
 # 滴答清单 pro
-^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/Soonan/JS/master/NobyDa/QuantumultX/File/DiDaQingDan.js
+^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/Holy7Hao/Rules/master/JS/Script/DiDaQingDan.js
 
 # VSCO滤镜VIP
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
@@ -126,7 +126,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
 
 # 彩云天气 Vip
-^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/Soonan/JS/master/NobyDa/QuantumultX/File/ColorWeather.js
+^https:\/\/biz\.caiyunapp\.com\/v2\/user\?app_name\=weather url script-response-body https://raw.githubusercontent.com/Holy7Hao/Rules/master/JS/Script/ColorWeather.js
 
 # Keep 解锁私人课程和动作库 (QX存在bug 该脚本可能无法生效)
 ^https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Keep.js

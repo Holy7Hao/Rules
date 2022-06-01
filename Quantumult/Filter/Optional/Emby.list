@@ -1,2 +1,10 @@
 # > Emby
+
+# PLUS Emby
+# SoCloud Emby
 HOST, emby.run, Emby
+# prprCloud Emby
+HOST, emby.prprcloud.com, prprEmby
+
+# 终点站
+HOST-SUFFIX, emby.wtf, prprEmby

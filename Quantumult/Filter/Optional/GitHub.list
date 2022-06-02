@@ -1,3 +1,7 @@
 HOST-KEYWORD,github,GitHub
 HOST-SUFFIX,github.com,GitHub
 HOST-SUFFIX,githubassets.com,GitHub
+HOST, github.global.ssl.fastly.net, GitHub
+HOST-SUFFIX, github.blog, GitHub
+HOST-SUFFIX, github.io, GitHub
+HOST-SUFFIX, githubusercontent.com, GitHub

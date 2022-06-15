@@ -1,6 +1,9 @@
 # Weibo
 HOST-SUFFIX, weibo.com, Weibo
 HOST-SUFFIX, weibo.cn, Weibo
-HOST-SUFFIX, sinaimg.cn, Weibo
-HOST-SUFFIX, sinaimg.com, Weibo
+# HOST-SUFFIX, sinaimg.cn, Weibo
+# HOST-SUFFIX, sinaimg.com, Weibo
 HOST-SUFFIX, sinaapp.com, Weibo
+# For better loading
+HOST-SUFFIX, sinaimg.cn, Mainland
+HOST-SUFFIX, sinaimg.com, Mainland

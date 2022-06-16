@@ -6,3 +6,7 @@ DOMAIN,apple.comscoreresearch.com,AppleNews
 DOMAIN,news-client.apple.com,AppleNews
 DOMAIN,news-events.apple.com,AppleNews
 DOMAIN,news-edge.apple.com,AppleNews
+
+# Apple Stocks
+DOMAIN, stocks-analytics-events.apple.com, AppleNews
+DOMAIN, stocks-data-service.apple.com, AppleNews

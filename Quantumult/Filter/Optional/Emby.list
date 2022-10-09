@@ -6,7 +6,7 @@ HOST, emby.run, Emby
 # prprCloud Emby
 HOST, emby.prprcloud.com, prprEmby
 # FlowerCloud Emby
-HOST, emby.flowercloud.yt, FlowerEmby
+# HOST, emby.flowercloud.yt, FlowerEmby
 
 # 终点站
 HOST-SUFFIX, emby.wtf, prprEmby

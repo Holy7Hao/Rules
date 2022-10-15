@@ -8,5 +8,8 @@ HOST, emby.prprcloud.com, prprEmby
 # FlowerCloud Emby
 # HOST, emby.flowercloud.yt, FlowerEmby
 
+# TAG Emby
+HOST, tagemby.com, TAG Emby
+
 # 终点站
 HOST-SUFFIX, emby.wtf, prprEmby

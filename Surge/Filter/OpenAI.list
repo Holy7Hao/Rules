@@ -4,3 +4,4 @@ DOMAIN, openai.com
 DOMAIN, auth0.openai.com
 DOMAIN, chat.openai.com
 DOMAIN-SUFFIX, openai.com
+DOMAIN-SUFFIX, sentry.io

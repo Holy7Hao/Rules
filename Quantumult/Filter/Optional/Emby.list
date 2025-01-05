@@ -5,6 +5,7 @@
 HOST, emby.run, Emby
 # prprCloud Emby
 HOST, emby.prprcloud.com, prprEmby
+HOST, emby.prpr.cn.com, prprEmby
 # FlowerCloud Emby
 # HOST, emby.flowercloud.yt, FlowerEmby
 

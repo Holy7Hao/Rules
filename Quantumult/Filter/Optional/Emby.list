@@ -2,7 +2,7 @@
 
 # PLUS Emby
 # SoCloud Emby
-HOST, emby.run, Emby
+#HOST, emby.run, Emby
 # prprCloud Emby
 HOST, emby.prprcloud.com, prprEmby
 HOST, emby.prpr.cn.com, prprEmby
@@ -11,7 +11,7 @@ HOST, neo.iflya321.com, prprEmby
 # HOST, emby.flowercloud.yt, FlowerEmby
 
 # TAG Emby
-HOST, tagemby.com, TAG Emby
+#HOST, tagemby.com, TAG Emby
 
 # 终点站
-HOST-SUFFIX, emby.wtf, prprEmby
+#HOST-SUFFIX, emby.wtf, prprEmby

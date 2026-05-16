@@ -1,0 +1,6 @@
+# Bambulab MakerWorld global sites
+DOMAIN,api.bambulab.com
+DOMAIN,ab.bblmw.com
+DOMAIN,makerworld.bblmw.com
+DOMAIN,public-cdn.bblmw.com
+DOMAIN-SUFFIX,bblmw.com

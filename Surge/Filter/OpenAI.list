@@ -6,3 +6,5 @@ DOMAIN, chat.openai.com
 DOMAIN-SUFFIX, openai.com
 DOMAIN-SUFFIX, sentry.io
 DOMAIN-SUFFIX, chatgpt.com
+DOMAIN, persistent.oaistatic.com
+DOMAIN-SUFFIX, oaistatic.com

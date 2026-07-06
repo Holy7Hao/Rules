@@ -7,5 +7,6 @@ DOMAIN-SUFFIX, openai.com
 DOMAIN-SUFFIX, sentry.io
 DOMAIN-SUFFIX, chatgpt.com
 DOMAIN, persistent.oaistatic.com
+DOMAIN, sdmntprwestus2.oaiusercontent.com
 DOMAIN-SUFFIX, oaistatic.com
 DOMAIN, browser-intake-datadoghq.com

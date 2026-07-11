@@ -1,0 +1,10 @@
+# AppleTV
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
+DOMAIN-SUFFIX,itunes.apple.com
+# 电视电影预告片
+DOMAIN-SUFFIX,video-ssl.itunes.apple.com
+# 电视电影正片
+DOMAIN-SUFFIX,mvod.itunes.apple.com
+DOMAIN-SUFFIX,hls-amt.itunes.apple.com

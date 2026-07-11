@@ -1,0 +1,9 @@
+# Weibo
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibo.cn
+# DOMAIN-SUFFIX,sinaimg.cn
+# DOMAIN-SUFFIX,sinaimg.com
+DOMAIN-SUFFIX,sinaapp.com
+# For better loading
+DOMAIN-SUFFIX,sinaimg.cn
+DOMAIN-SUFFIX,sinaimg.com

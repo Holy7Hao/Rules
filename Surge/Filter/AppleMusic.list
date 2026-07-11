@@ -1,0 +1,16 @@
+# AppleMusic
+DOMAIN-SUFFIX,aod.itunes.apple.com
+DOMAIN-SUFFIX,api.smoot.apple.cn
+DOMAIN-SUFFIX,music.apple.com
+DOMAIN-SUFFIX,mvod.itunes.apple.com
+DOMAIN-SUFFIX,client-api.itunes.apple.com
+# MV 播放
+DOMAIN-SUFFIX,mvod.itunes.apple.com
+# Beats1 直播
+DOMAIN-SUFFIX,itsliveradio.apple.com
+# Beats1 视频
+DOMAIN-SUFFIX,aodp-ssl.apple.com
+# iTunes Store 音乐试听
+DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
+# iTunes Store 购买后播放
+DOMAIN-SUFFIX,streamingaudio.itunes.apple.com

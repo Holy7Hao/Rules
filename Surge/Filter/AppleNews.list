@@ -1,0 +1,12 @@
+# AppleNews
+DOMAIN,gateway.icloud.com
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,apple.news
+DOMAIN,apple.comscoreresearch.com
+DOMAIN,news-client.apple.com
+DOMAIN,news-events.apple.com
+DOMAIN,news-edge.apple.com
+
+# Apple Stocks
+DOMAIN,stocks-analytics-events.apple.com
+DOMAIN,stocks-data-service.apple.com

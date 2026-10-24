@@ -1,0 +1,21 @@
+# > X (Twitter)
+# Compatible with Surge RULE-SET and Loon Remote Rule.
+# Sources:
+# https://help.x.com/en/using-x/url-shortener
+# https://help.x.com/ja/using-x/x-videos
+# https://help.x.com/es/using-x/periscope-web
+
+# Website, API and legacy links
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twttr.com
+
+# Images, video and static assets
+DOMAIN-SUFFIX,twimg.com
+
+# Short links
+DOMAIN-SUFFIX,t.co
+
+# Live video
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,pscp.tv

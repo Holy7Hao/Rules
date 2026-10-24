@@ -1,0 +1,23 @@
+# > Cursor
+# Compatible with Surge RULE-SET and Loon Remote Rule.
+# Sources:
+# https://cursor.com/docs/enterprise/network-configuration
+# https://cursor.com/help/troubleshooting/sign-in-domains
+
+# Website, API, extensions, CDN and hosted computers
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursorvm.com
+
+# Client downloads
+DOMAIN,anysphere-binaries.s3.us-east-1.amazonaws.com
+
+# Shared sign-in hosts
+DOMAIN,accounts.spacex.ai
+DOMAIN,accounts.x.ai
+DOMAIN,auth.x.ai
+DOMAIN,auth.grok.com
+DOMAIN,auth.grokusercontent.com
+DOMAIN,auth.grokipedia.com

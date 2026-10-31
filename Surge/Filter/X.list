@@ -1,4 +1,4 @@
-# > X (Twitter), Grok, Grok Bot & xAI
+# > X (Twitter), Grok, Grok Bot, xAI & Cursor
 # Compatible with Surge RULE-SET and Loon Remote Rule.
 # Sources:
 # https://help.x.com/en/using-x/url-shortener
@@ -34,9 +34,8 @@ DOMAIN-SUFFIX,spacex.ai
 # Grok Bot website and mail subdomains
 DOMAIN-SUFFIX,grokbot.com
 
-# Grok Bot uses Cursor infrastructure for API, assets and hosted computers.
+# Cursor and Grok Bot API, assets, extensions and hosted computers
 # DOMAIN-SUFFIX also covers nested hosts such as <computer>.<cluster>.cursorvm.com.
-# These domains intentionally overlap Cursor.list so either list works on its own.
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com

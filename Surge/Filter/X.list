@@ -1,9 +1,13 @@
-# > X (Twitter)
+# > X (Twitter), Grok, Grok Bot & xAI
 # Compatible with Surge RULE-SET and Loon Remote Rule.
 # Sources:
 # https://help.x.com/en/using-x/url-shortener
 # https://help.x.com/ja/using-x/x-videos
 # https://help.x.com/es/using-x/periscope-web
+# https://docs.x.ai/grok-bot/proxies
+# https://cursor.com/docs/enterprise/network-configuration
+# https://cursor.com/help/troubleshooting/sign-in-domains
+# https://grokbot.com/
 
 # Website, API and legacy links
 DOMAIN-SUFFIX,x.com
@@ -19,3 +23,25 @@ DOMAIN-SUFFIX,t.co
 # Live video
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
+
+# Grok website, xAI API, generated media and shared sign-in
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grokusercontent.com
+DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,spacex.ai
+
+# Grok Bot website and mail subdomains
+DOMAIN-SUFFIX,grokbot.com
+
+# Grok Bot uses Cursor infrastructure for API, assets and hosted computers.
+# DOMAIN-SUFFIX also covers nested hosts such as <computer>.<cluster>.cursorvm.com.
+# These domains intentionally overlap Cursor.list so either list works on its own.
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursorvm.com
+
+# Client downloads (match only this S3 bucket)
+DOMAIN,anysphere-binaries.s3.us-east-1.amazonaws.com

@@ -10,16 +10,13 @@ DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursorvm.com
-DOMAIN-SUFFIX,x.ai
 
 # Client downloads
 DOMAIN,anysphere-binaries.s3.us-east-1.amazonaws.com
 
-# Shared sign-in hosts
-DOMAIN,accounts.spacex.ai
-DOMAIN,accounts.x.ai
-DOMAIN,auth.x.ai
-DOMAIN,status.x.ai
-DOMAIN,auth.grok.com
-DOMAIN,auth.grokusercontent.com
-DOMAIN,auth.grokipedia.com
+# Shared sign-in domains (include the apex and all subdomains)
+DOMAIN-SUFFIX,spacex.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grokusercontent.com
+DOMAIN-SUFFIX,grokipedia.com
